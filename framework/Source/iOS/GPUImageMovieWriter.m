@@ -611,12 +611,7 @@ NSString *const kGPUImageColorSwizzlingFragmentShaderString = SHADER_STRING
         glFramebufferRenderbuffer(GL_FRAMEBUFFER, GL_COLOR_ATTACHMENT0, GL_RENDERBUFFER, movieRenderbuffer);	
     }
     
-	
-<<<<<<< HEAD
-	GLenum status __attribute__((unused)) = glCheckFramebufferStatus(GL_FRAMEBUFFER);
-=======
 	__unused GLenum status = glCheckFramebufferStatus(GL_FRAMEBUFFER);
->>>>>>> upstream/master
     
     NSAssert(status == GL_FRAMEBUFFER_COMPLETE, @"Incomplete filter FBO: %d", status);
 }
